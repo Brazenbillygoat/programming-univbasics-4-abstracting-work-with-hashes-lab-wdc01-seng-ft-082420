@@ -3,13 +3,16 @@ def my_hash_creator(key, value)
 end
 
 def read_from_hash(hash, key)
-  hash[key]
+  my_hash = hash
+  my_hash[key]
 end
 
 def update_counting_hash(hash, key)
-  if hash[key]
-    hash[key] += 1 
+  my_hash = hash
+  
+  if my_hash[key]
+    my_hash[key] += 1 
   else
-    hash[key] = 1 
+    my_hash[key] = 1 
   end
 end
